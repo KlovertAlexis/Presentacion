@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Jost', sans-serif;
+}
+
+.container-uno{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f2f2f2;
+    overflow: hidden;
+}
+.container-language{
+    position: relative;
+    max-width:900px;
+    height: 900px;
+    padding: -500px;
+    color: #555;
+}
+/*-----------------------------------------------*/
+.container-language .content{
+    display: none;
+    margin-top: 20px;
+}
+.container-language .content.contentEspanol{
+    display: block;
+}
+/*------------CHECKBOX--------------------*/
+.check{
+    position: relative;
+    width: 50px;
+}
+.check:before{
+    content: '';
+    position: absolute;
+    width: 60PX;
+    height: 25PX;
+    background: #333;
+    border-radius: 25px;
+}
+.check:checked:before{
+    background: #00a1ff;
+}
+.check:after{
+    content: '';
+    position: absolute;
+    left: 0px;
+    width: 25PX;
+    height: 25PX;
+    background: #fff;
+    border-radius: 25px;
+    transition: 0.25%;
+    border: 2px solid #333;
+    box-sizing: border-box;
+}
+.check:checked:after{
+    left: 25px;
+    border: 2px solid #00a1ff;
+}
+
+.check:checked ~ .content.contentEspanol{
+    display: none;
+}
+.check:checked ~ .content.contentEnglish{
+    display: block;
+}
+
+/*-----------------------------------*/
+.es{
+    color: #333;
+}
+.en{
+    color: #00a1ff;
+    
+}
+
+/*------------------IMAGENES-------------------*/
+
+.circle{
+    position: relative;
+    overflow: hidden;
+}
+.circle img{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.circle.circle1{
+    width: 300px;
+    height: 300px;
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+.circle.circle2{
+    top: -100px;
+    width: 300px;
+    height: 300px;
+    float: right;
+    border-radius: 50%;
+    margin: 20px;
+    shape-outside: circle();
+}
+

@@ -1,0 +1,31 @@
+@media screen and (min-width: 1024px) {
+  footer{
+    position: relative;
+    bottom: 0px;
+    padding: 10px;
+  }
+    .container-body{
+        position: relative;
+        left: 370px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    
+  footer{
+    position: relative;
+    bottom: 0px;
+    padding: 10px;
+  }
+}
+
+
+@media screen and (min-width: 400px) {
+
+  footer{
+    position: relative;
+    bottom: 0px;
+    padding: 10px;
+  }
+}

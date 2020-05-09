@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="language.css">
+        <link rel="stylesheet" href="portafolio.css">
+        <link rel="stylesheet" href="habilidades.css">
+        <link rel="stylesheet" href="responsive.css">
+        <link rel="stylesheet" href="SocialNetworks.css">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    </head>
+    <body>
+        <section>
+            <img src="img/bg.jpg" id="bg">
+            <img src="img/moon.png" id="moon">
+            <img src="img/mountain.png" id="mountain">
+            <img src="img/road.png" id="road">
+            <h2 id="text" class="bienvenido">Bienvenido</h2>
+        </section>
+        <script type="text/javascript">
+            let bg = document.getElementById("bg");
+            let moon = document.getElementById("moon");
+            let mountain = document.getElementById("mountain");
+            let road = document.getElementById("road");
+            let text = document.getElementById("text");
+            
+            window.addEventListener('scroll', function(){
+                var value = window.scrollY;
+                
+                bg.style.top = value * 0.5 + 'px';
+                moon.style.top = -value * 0.5 + 'px';
+                mountain.style.top = -value * 0.15 + 'px';
+                road.style.top = value * 0.15 + 'px';
+                text.style.top = value * 1 + 'px';
+            })
+        </script>
+        
+    <!----------------------------PERFIL------------------------------------------->
+        <div class="container-uno">
+        <div class="container-language">
+           <br>
+            <span class="es">Español⠀⠀</span>
+            <input type="checkbox" class="check">
+            <span class="en">⠀⠀English</span><br><br>
+            
+            <!---------------------ESPAÑOL---------------------------------->
+            <div class="content contentEspanol">
+               
+                <h2>¿Quien soy?</h2><br>
+                <div class="circle circle1">
+                    <img src="img/yo.png" class="yo">
+                </div>
+                                
+                <p><br>Mi nombre es Klovert Alexis Gonzales Valladares, egresado de la carrera de Ingenieria de Software de la Universidad Privada Antenor Orrego. Apasionado por el emprendimiento, soy creativo, innovador, proactivo, me encuentro apto para gestionar proyectos de software y con disposicion para asumir nuevos retos.
+                Dentro de mis logros fue haber participado en un concurso de desarrollo de StartUp, tambien haber participado en el elenco de Danza Moderna de la Universidad y haber mostrado espectaculos dentro del teatro Victor Raul Lozano Ibañez.
+                Dentro de mis aptitudes y habilidades tengo excelente puntualidad, responsabilidad, comunicacion, trabajo en equipo y aprendizaje rapido. Domino diferentes aplicaciones para crear diversos contenidos web, videos y/o imagenes como en: Wordpress, Wix, Sublime, Brackets, Adobe Photoshop, After Effects, Light Room, Premier, Sony Vegas, manejo de programas como Word, Power Point y Excel, tambien manejo de redes sociales. Tengo conocimientos sobre lenguajes de programacion entre ellos HTML, CSS, JS, Java, C#, SQL.</p><br><br><br>
+                
+                <h2>Formacion Academica</h2><br><br>
+                
+                <div class="circle circle2">
+                    <img src="img/upao.jpg" class="upao">
+                </div>
+                
+                <p>Universidad Privada Antenor Orrego, Trujillo • 2014 – 2019 <br>
+                Carrera: Ingeniería de Software<br><br>
+                Centro de Idiomas UPAO, Trujillo <br>
+                Programa de inglés finalizado hasta avanzado
+                </p>
+                <br><br><br><br><br><br>
+            </div>
+            
+            <!---------------------ingles---------------------------------->
+            <div class="content contentEnglish">
+                <h2>Who I am?</h2><br>
+                
+               <div class="circle circle1">
+                    <img src="img/yo.png" class="yo">
+                </div>
+                
+                <p><br>My name is Klovert Alexis Gonzales Valladares, graduated from the Software Engineering degree at Antenor Orrego Private University. Passionate about entrepreneurship, I am creative, innovative, proactive, I am able to manage software projects and with a provision to take on new challenges.
+                Among my achievements was to have participated in a StartUp development competition, also to have participated in the cast of Modern Dance of the University and to have shown shows within the Victor Raul Lozano Ibañez theater.
+                Within my skills and abilities I have excellent punctuality, responsibility, communication, teamwork and quick learning. I have different applications to create various web content, videos and / or images such as in Wordpress, Wix, Sublime, Brackets, Adobe Photoshop, After Effects, Light Room, Premier, Sony Vegas, handling programs like Word, Power Point and Excel, also social media management. I have knowledge of programming languages including HTML, CSS, JS, Java, C, SQL.</p><br><br><br>
+                
+                <h2>Academic Training</h2><br><br>
+                
+                <div class="circle circle2">
+                    <img src="img/upao.jpg" class="upao">
+                </div>
+                                
+                <p>Private University Antenor Orrego, Trujillo • 2014 – 2019 <br>
+                Career: Software Engineering <br><br>
+                UPAO Language Center, Trujillo <br>
+                English program finished to advanced
+                </p>
+                <br><br><br><br><br><br>
+            </div>
+        </div>
+        </div>
+
+        <!-------------------------------HABILIDADES---------------------------------->
+        <h2 class="txHabilidades">Habilidades</h2>
+           <div class="body-container">
+            <div class="container-hab">
+                             
+                <div class="card">
+                   <div class="box">
+                      <div class="percent">
+                          <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                              <h2>85<span>%</span></h2>
+                          </div>
+                      </div>
+                      <h2 class="texto">HTML</h2> 
+                   </div>
+                </div>
+                
+                <div class="card">
+                   <div class="box">
+                      <div class="percent">
+                          <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                              <h2>79<span>%</span></h2>
+                          </div>
+                      </div>
+                      <h2 class="texto">CSS</h2> 
+                   </div>
+                </div>
+                
+                <div class="card">
+                   <div class="box">
+                      <div class="percent">
+                          <svg>
+                              <circle cx="70" cy="70" r="70"></circle>
+                              <circle cx="70" cy="70" r="70"></circle>
+                          </svg>
+                          <div class="number">
+                              <h2>61<span>%</span></h2>
+                          </div>
+                      </div>
+                      <h2 class="texto">JavaScript</h2> 
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!------------------------------IMAGENES----------------------->
+            <h2 class="txPortafolio">Portafolio de Imagenes</h2>
+            <div class="container-img-body">
+               <div class="container-img">
+                   <div class="caja">
+                       <img src="img/cuarentena%201.jpg">
+                   </div>
+                   <div class="caja">
+                       <img src="img/cuarentena%202.jpg">
+                   </div>
+                   <div class="caja">
+                       <img src="img/cuarentena%203.jpg">
+                   </div>
+                   <div class="caja">
+                       <img src="img/cuarentena%204.jpg">
+                   </div>
+
+               </div>
+
+            </div>
+            
+        <!-------------------------REDES SOCIALES---------------------------------------->
+        <h2 class="txSocial">Mis redes</h2>
+        <div class="redes-sociales">
+            <ul>
+            <li>
+                <a href="https://www.facebook.com/dranshot21">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-facebook-official" aria-hidden="true"></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.instagram.com/dranshot21/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-instagram" aria-hidden="true"></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://www.linkedin.com/in/klovert-alexis-gonzales-valladares-8101131a8/">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-linkedin" aria-hidden="true"></span>
+                </a>
+            </li>
+
+            <li>
+                <a href="https://github.com/KlovertAlexis">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="fa fa-github" aria-hidden="true"></span>
+                </a>
+            </li>
+        </ul>
+            
+        </div>
+
+       <!-------------------------------PIE DE PAGINA------------------------------------>
+       <footer class="page-footer font-small blue">
+
+            <div class="container-body">
+                --- Gracias por visitar --- <br> --- Tanks to visit ----
+            </div>
+
+        </footer>
+        
+        
+    </body>
+</html>
+
